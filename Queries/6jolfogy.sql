@@ -1,0 +1,4 @@
+SELECT nev FROM pizza
+WHERE id IN (SELECT pizzaid FROM rendeles)
+GROUP BY nev HAVING COUNT(meret)=3
+ORDER BY nev COLLATE HUNGARIAN;

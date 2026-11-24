@@ -1,0 +1,1 @@
+SELECT nev, meret, ar FROM pizza WHERE ar < 1500 ORDER BY meret DESC, nev COLLATE HUNGARIAN;
